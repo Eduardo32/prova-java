@@ -23,7 +23,7 @@ public class Entidade {
 		this.nome = nome.trim();
 	}
 	
-	public Boolean validaNome(String nome) {
+	public boolean validaNome(String nome) {
 		if(nome != null && !nome.isBlank()) 
 			return true;
 		return false;

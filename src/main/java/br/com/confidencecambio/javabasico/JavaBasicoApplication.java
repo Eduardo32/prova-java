@@ -8,19 +8,5 @@ public class JavaBasicoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaBasicoApplication.class, args);
-		
-		/*
-		try {
-			Cliente teste = new Cliente(" Paulo Eduardo Pereira Costa ");
-			
-			System.out.println(teste.getNome());
-			System.out.println(teste.getPrimeiroNome());
-			System.out.println(teste.getUltimoNome());
-			System.out.println(teste.getNomeAbreviado());
-			System.out.println(teste.getNomeMaiusculo());
-		} catch (IllegalArgumentException e) {
-			System.out.println(e);
-		}
-		*/
 	}
 }

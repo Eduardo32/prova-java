@@ -21,6 +21,7 @@ public class Entidade {
 		if(!this.validaNome(nome))
 			throw new IllegalArgumentException("O nome não pode ser null ou vazio");
 		this.nome = nome.trim();
+		this.nomes = this.nome.split(" ");
 	}
 	
 	public boolean validaNome(String nome) {

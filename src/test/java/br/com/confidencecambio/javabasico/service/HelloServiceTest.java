@@ -1,20 +1,18 @@
 package br.com.confidencecambio.javabasico.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+class HelloServiceTest {
 
-public class HelloServiceTest {
+	private HelloService service;
 
-    private HelloService service;
-
-    @Before
+    @BeforeEach
     public void init(){
-         service= new HelloService();
+         service = new HelloService();
     }
-
 
     @Test
     public void quandoPassarUmNomeQueroEleDeResposta(){
@@ -25,9 +23,7 @@ public class HelloServiceTest {
 
     @Test
     public void quandoPassarNuloQueroOPadrao(){
-
         String valorValido = service.retornaValorValido(null);
         assertEquals("Mundo",valorValido);
     }
-
 }
